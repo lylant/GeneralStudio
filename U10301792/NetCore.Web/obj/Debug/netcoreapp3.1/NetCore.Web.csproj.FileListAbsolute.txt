@@ -110,3 +110,7 @@ C:\Users\Lylantz\OneDrive\Projects\GitHub\GeneralStudio\U10301792\NetCore.Web\ob
 C:\Users\Lylantz\OneDrive\Projects\GitHub\GeneralStudio\U10301792\NetCore.Web\obj\Debug\netcoreapp3.1\NetCore.Web.genruntimeconfig.cache
 C:\Users\Lylantz\OneDrive\Projects\GitHub\GeneralStudio\U10301792\NetCore.Web\obj\Debug\netcoreapp3.1\Razor\Views\Membership\Index.cshtml.g.cs
 C:\Users\Lylantz\OneDrive\Projects\GitHub\GeneralStudio\U10301792\NetCore.Web\obj\Debug\netcoreapp3.1\Razor\Views\Membership\Login.cshtml.g.cs
+C:\Users\Lylantz\OneDrive\Projects\GitHub\GeneralStudio\U10301792\NetCore.Web\bin\Debug\netcoreapp3.1\NetCore.Data.dll
+C:\Users\Lylantz\OneDrive\Projects\GitHub\GeneralStudio\U10301792\NetCore.Web\bin\Debug\netcoreapp3.1\NetCore.Services.dll
+C:\Users\Lylantz\OneDrive\Projects\GitHub\GeneralStudio\U10301792\NetCore.Web\bin\Debug\netcoreapp3.1\NetCore.Services.pdb
+C:\Users\Lylantz\OneDrive\Projects\GitHub\GeneralStudio\U10301792\NetCore.Web\bin\Debug\netcoreapp3.1\NetCore.Data.pdb

@@ -36,6 +36,7 @@ namespace NetCore.Web.Controllers
 
             if (ModelState.IsValid)
             {
+                // ViewModel
                 // User Service
                 if (_user.MatchUserInfo(login))
                 {

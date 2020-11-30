@@ -28,7 +28,7 @@ namespace NetCore.Web.Controllers
 
             if (ModelState.IsValid)
             {
-                // define a user credential to match
+                // define a sample user credential to match
                 string userID = "simonlee";
                 string password = "19978707";
 

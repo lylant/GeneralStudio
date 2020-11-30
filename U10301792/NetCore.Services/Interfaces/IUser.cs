@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NetCore.Data.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,5 +7,6 @@ namespace NetCore.Services.Interfaces
 {
     public interface IUser
     {
+        bool MatchUserInfo(LoginInfo login);
     }
 }

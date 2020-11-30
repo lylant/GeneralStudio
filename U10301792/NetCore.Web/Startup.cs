@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using NetCore.Services.Interfaces;
+using NetCore.Services.Svcs;
 
 namespace NetCore.Web
 {
@@ -23,6 +25,9 @@ namespace NetCore.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Add a service to use DI pattern
+            // Inject the UserService class instance to IUser interface
+            services.AddScoped<IUser, UserService>();
             services.AddControllersWithViews();
         }
 

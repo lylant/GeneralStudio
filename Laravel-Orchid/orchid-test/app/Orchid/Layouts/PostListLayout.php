@@ -23,13 +23,18 @@ class PostListLayout extends Table
     {
         return [
             TD::make('title', 'Title')
+                ->sort()
+                ->filter(TD::FILTER_TEXT)
                 ->render(function (Post $post) {
                     return Link::make($post->title)
                         ->route('platform.post.edit', $post);
                 }),
 
-            TD::make('created_at', 'Created'),
-            TD::make('updated_at', 'Last edit'),
+            TD::make('created_at', 'Created')
+                ->sort(),
+
+            TD::make('updated_at', 'Last edit')
+                ->sort(),
         ];
     }
 }

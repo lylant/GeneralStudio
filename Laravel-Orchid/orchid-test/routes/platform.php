@@ -11,6 +11,10 @@ use App\Orchid\Screens\Examples\ExampleScreen;
 use App\Orchid\Screens\Examples\ExampleTextEditorsScreen;
 use App\Orchid\Screens\PlatformScreen;
 use App\Orchid\Screens\EmailSenderScreen;
+use App\Orchid\Screens\TestEditScreen;
+use App\Orchid\Screens\TestListScreen;
+use App\Orchid\Screens\PostEditScreen;
+use App\Orchid\Screens\PostListScreen;
 use App\Orchid\Screens\Role\RoleEditScreen;
 use App\Orchid\Screens\Role\RoleListScreen;
 use App\Orchid\Screens\User\UserEditScreen;
@@ -100,6 +104,23 @@ Route::screen('email', EmailSenderScreen::class)
             ->parent('platform.index')
             ->push('Email sender');
     });
+
+
+// DBTest
+Route::screen('edittest/{edittest?}', TestEditScreen::class)
+    ->name('platform.dbtest.edit');
+
+Route::screen('listtest', TestListScreen::class)
+    ->name('platform.dbtest.list');
+
+
+
+Route::screen('post/{post?}', PostEditScreen::class)
+    ->name('platform.post.edit');
+
+Route::screen('posts', PostListScreen::class)
+    ->name('platform.post.list');
+
 
 // Example...
 Route::screen('example', ExampleScreen::class)

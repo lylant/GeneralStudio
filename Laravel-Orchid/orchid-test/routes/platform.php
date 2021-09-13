@@ -15,6 +15,10 @@ use App\Orchid\Screens\TestEditScreen;
 use App\Orchid\Screens\TestListScreen;
 use App\Orchid\Screens\PostEditScreen;
 use App\Orchid\Screens\PostListScreen;
+
+use App\Orchid\Screens\CourseEditScreen;
+use App\Orchid\Screens\CourseListScreen;
+
 use App\Orchid\Screens\Role\RoleEditScreen;
 use App\Orchid\Screens\Role\RoleListScreen;
 use App\Orchid\Screens\User\UserEditScreen;
@@ -120,6 +124,16 @@ Route::screen('post/{post?}', PostEditScreen::class)
 
 Route::screen('posts', PostListScreen::class)
     ->name('platform.post.list');
+
+
+
+Route::screen('courseedit/{courseedit?}', CourseEditScreen::class)
+    ->name('platform.course.edit');
+
+Route::screen('courselist', CourseListScreen::class)
+    ->name('platform.course.list');
+
+
 
 
 // Example...

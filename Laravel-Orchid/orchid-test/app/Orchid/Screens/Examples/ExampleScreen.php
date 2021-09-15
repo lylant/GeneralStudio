@@ -5,6 +5,7 @@ namespace App\Orchid\Screens\Examples;
 use App\Orchid\Layouts\Examples\ChartBarExample;
 use App\Orchid\Layouts\Examples\ChartLineExample;
 use App\Orchid\Layouts\Examples\MetricsExample;
+use Orchid\Screen\Actions\Link;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Orchid\Screen\Actions\Button;
@@ -16,6 +17,7 @@ use Orchid\Screen\Screen;
 use Orchid\Screen\TD;
 use Orchid\Support\Facades\Layout;
 use Orchid\Support\Facades\Toast;
+use Illuminate\Support\Facades\DB;
 
 class ExampleScreen extends Screen
 {
@@ -101,11 +103,17 @@ class ExampleScreen extends Screen
                 ->method('showToast')
                 ->novalidate()
                 ->icon('bag'),
+/*
+                Button::make('Export test')
+                ->method('export_test')
+                ->icon('cloud-download')
+                ->rawClick()
+                ->novalidate(),
+*/
 
-            ModalToggle::make('Launch demo modal')
-                ->modal('exampleModal')
-                ->method('showToast')
-                ->icon('full-screen'),
+            Link::make('TEST')
+            ->href('/export.php')
+            ->icon('docs'),
 
             Button::make('Export file')
                 ->method('export')
@@ -141,6 +149,7 @@ class ExampleScreen extends Screen
     public function layout(): array
     {
         return [
+
             MetricsExample::class,
 
             Layout::columns([
@@ -214,4 +223,59 @@ class ExampleScreen extends Screen
             });
         }, 'File-name.csv');
     }
+
+
+    public function export_test()
+    {
+        /*
+        return response()->streamDownload(function () {
+
+
+
+
+            $csv = tap(fopen('php://output', 'wb'), function ($csv) {
+                fputcsv($csv, array('name', 'level', 'price', 'institution'));
+            });
+
+
+            //$result = DB::connection('orchid-test')->select('SELECT name, level, price, institution FROM courses');
+            
+            $results = DB::select('SELECT name, level, price, institution FROM courses');
+
+            
+
+
+            //$courses = collect($results);
+
+            //TD::make('courses.name');
+            
+            
+            //->each(function (array $row) use ($csv) {
+            //    fputcsv($csv, $row);
+            //});
+
+            //$courses = collect($result)->transform(fn(array $course) => new \Orchid\Screen\Repository($course));
+
+            //$result = DB::connection('orchid-test')->select('SELECT name, level, price, institution FROM courses');
+            //$rows = collect($result)->transform
+
+            collect([
+                ['row1:col1', 'row1:col2', 'row1:col3'],
+                ['row2:col1', 'row2:col2', 'row2:col3'],
+                ['row3:col1', 'row3:col2', 'row3:col3'],
+            ])->each(function (array $row) use ($csv) {
+                fputcsv($csv, $row);
+            });
+
+
+
+            return tap($csv, function ($csv) {
+                fclose($csv);
+            });
+        }, 'File-name.csv');
+        */
+    }
+
+
+    
 }

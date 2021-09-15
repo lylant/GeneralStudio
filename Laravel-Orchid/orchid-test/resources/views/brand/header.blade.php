@@ -7,10 +7,5 @@
 @endpush
 
 <p class="h2 n-m font-thin v-center">
-    <x-orchid-icon path="database"/>
-
-    <span class="m-l d-none d-sm-block">
-        WSU
-        <small class="v-top opacity">PX</small>
-    </span>
+    <img src="/res/images/header_logo.png" style="width:100%; height:100%;" />
 </p>

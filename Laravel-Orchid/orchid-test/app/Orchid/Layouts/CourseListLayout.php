@@ -42,4 +42,11 @@ class CourseListLayout extends Table
                 ->sort(),
         ];
     }
+
+    /**
+     * Determines whether to display the export button.
+     *
+     * @var bool
+     */
+    protected $export = true;
 }

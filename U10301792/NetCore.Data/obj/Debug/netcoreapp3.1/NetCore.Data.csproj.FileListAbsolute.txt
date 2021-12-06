@@ -1,9 +1,0 @@
-C:\Users\Lylantz\OneDrive\Projects\GitHub\GeneralStudio\U10301792\NetCore.Data\bin\Debug\netcoreapp3.1\NetCore.Data.deps.json
-C:\Users\Lylantz\OneDrive\Projects\GitHub\GeneralStudio\U10301792\NetCore.Data\bin\Debug\netcoreapp3.1\NetCore.Data.dll
-C:\Users\Lylantz\OneDrive\Projects\GitHub\GeneralStudio\U10301792\NetCore.Data\bin\Debug\netcoreapp3.1\NetCore.Data.pdb
-C:\Users\Lylantz\OneDrive\Projects\GitHub\GeneralStudio\U10301792\NetCore.Data\obj\Debug\netcoreapp3.1\NetCore.Data.csprojAssemblyReference.cache
-C:\Users\Lylantz\OneDrive\Projects\GitHub\GeneralStudio\U10301792\NetCore.Data\obj\Debug\netcoreapp3.1\NetCore.Data.AssemblyInfoInputs.cache
-C:\Users\Lylantz\OneDrive\Projects\GitHub\GeneralStudio\U10301792\NetCore.Data\obj\Debug\netcoreapp3.1\NetCore.Data.AssemblyInfo.cs
-C:\Users\Lylantz\OneDrive\Projects\GitHub\GeneralStudio\U10301792\NetCore.Data\obj\Debug\netcoreapp3.1\NetCore.Data.csproj.CoreCompileInputs.cache
-C:\Users\Lylantz\OneDrive\Projects\GitHub\GeneralStudio\U10301792\NetCore.Data\obj\Debug\netcoreapp3.1\NetCore.Data.dll
-C:\Users\Lylantz\OneDrive\Projects\GitHub\GeneralStudio\U10301792\NetCore.Data\obj\Debug\netcoreapp3.1\NetCore.Data.pdb

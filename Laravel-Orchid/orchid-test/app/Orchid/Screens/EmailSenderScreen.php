@@ -119,7 +119,7 @@ class EmailSenderScreen extends Screen
                     ->help('Add the content for the message that you would like to send.')
                 */
             ]),
-
+            /*
             Layout::table([
                 TD::make('id', 'ID')
                     ->width('150')
@@ -137,7 +137,7 @@ class EmailSenderScreen extends Screen
                         return '$ '.number_format($model->get('price'), 2);
                     }),
             ]),
-
+            */
             Layout::columns([
                 ChartsLayout::class,
             ]),
